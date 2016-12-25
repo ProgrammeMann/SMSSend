@@ -272,7 +272,7 @@ public class SMS {
 
 			reader.close();
 		}
-		catch (MalformedURLException e) { // Неверно урл, протокол...
+		catch (MalformedURLException e) {
 
 		}
 		catch (IOException e) {
@@ -295,14 +295,3 @@ public class SMS {
 	}
 }
 
-// Examples:
-/*
-		Smsc sd= new Smsc();
-		// or
-		Smsc sd= new Smsc("login", "password");
-		
-		sd.send_sms("79999999999", "Ваш пароль: 123", 1, "", "", 0, "", "");
-		sd.get_sms_cost("79999999999", "Вы успешно зарегистрированы!", 0, 0, "", "");
-		sd.get_status(sms_id, "79999999999");
-		sd.get_balanse();
-*/
